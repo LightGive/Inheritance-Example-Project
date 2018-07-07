@@ -2,14 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BulletBase : MonoBehaviour {
+public class BulletBase : MonoBehaviour
+{
+	[SerializeField]
+	private int m_damageVal;
 
-	// Use this for initialization
+	public int DamageValue
+	{
+		get { return m_damageVal; }
+	}
+
 	void Start () {
 		
 	}
 	
-	// Update is called once per frame
 	void Update () {
 		
 	}

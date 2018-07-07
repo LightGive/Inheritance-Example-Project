@@ -5,6 +5,8 @@ using UnityEngine;
 public class BaseStatus : MonoBehaviour
 {
 	[SerializeField]
+	private BulletBase m_bullet;
+	[SerializeField]
 	private int m_maxHp;
 	[SerializeField]
 	private float m_moveSpeed;
@@ -29,7 +31,7 @@ public class BaseStatus : MonoBehaviour
 
 	public void Damage(int _damageVal)
 	{
-
+		hp -= _damageVal;
 	}
 
 	public void Move(Vector2 _vec)
