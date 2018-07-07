@@ -10,8 +10,12 @@ public class Player : BaseStatus
 		
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
+	void Update ()
+	{
+		var vec = new Vector2(
+			Input.GetAxisRaw("Horizontal"), 
+			Input.GetAxisRaw("Vertical"));
+
+		base.Move(vec);
 	}
 }
