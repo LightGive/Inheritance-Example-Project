@@ -38,4 +38,11 @@ public class BaseStatus : MonoBehaviour
 	{
 		transform.position += new Vector3(_vec.x, _vec.y, 0.0f) * m_moveSpeed * Time.deltaTime;
 	}
+
+	public void ShotBullet(Vector2 _vec)
+	{
+		var angle = (Mathf.Atan2(_vec.y, _vec.x) * Mathf.Rad2Deg) + 90.0f;
+		var bullet = Instantiate(m_bullet, transform.position, Quaternion.Euler(0.0f, 0.0f, angle));
+		bullet.ShotBullet(_vec);
+	}
 }

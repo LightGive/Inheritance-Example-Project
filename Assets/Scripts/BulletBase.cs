@@ -8,24 +8,34 @@ public class BulletBase : MonoBehaviour
 	private int m_damageVal;
 	[SerializeField]
 	protected float m_speed;
+	
+	private Vector2 m_vec;
+	private bool m_isActive;
 
-	public int DamageValue
+	public int DamageValue 	{ get { return m_damageVal; } }
+	public float Speed 		{ get { return m_speed; } }
+	public bool isActive
 	{
-		get { return m_damageVal; }
+		get { return m_isActive; }
+		set { m_isActive = value; }
 	}
-	public float Speed
-	{
-		get { return m_speed; }
-	}
-
 
 	void Start ()
 	{
 		
 	}
 	
-	void Update ()
+	protected virtual void Update ()
 	{
-		
+		if (isActive)
+		{
+			transform.position += new Vector3(m_vec.x, m_vec.y, 0.0f) * m_speed * Time.deltaTime;
+		}
+	}
+
+	public void ShotBullet(Vector2 _vec)
+	{
+		m_vec = _vec;
+		isActive = true;
 	}
 }
