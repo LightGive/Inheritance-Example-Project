@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : BaseStatus
+public class BaseStatus : MonoBehaviour
 {
 
-	// Use this for initialization
-	void Start () {
+	void Start ()
+	{
 		
 	}
 	
