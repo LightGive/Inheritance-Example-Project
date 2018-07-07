@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class Player : BaseStatus
 {
-
-	// Use this for initialization
-	void Start () {
+	void Start ()
+	{
 		
 	}
 	
@@ -17,5 +16,10 @@ public class Player : BaseStatus
 			Input.GetAxisRaw("Vertical"));
 
 		base.Move(vec);
+	}
+
+	private void OnTriggerEnter2D(Collider2D _col)
+	{
+		//if(_col.tag == "EnemyBullet")
 	}
 }
