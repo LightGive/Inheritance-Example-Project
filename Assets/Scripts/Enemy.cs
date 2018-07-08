@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Enemy : BaseStatus
 {
+	[SerializeField]
+	protected int m_score;
+
 	private void OnTriggerEnter2D(Collider2D _col)
 	{
 		Debug.Log("Trigger");
