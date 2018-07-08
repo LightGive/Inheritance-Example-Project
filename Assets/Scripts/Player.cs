@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class Player : BaseStatus
 {
+	[SerializeField]
+	private float maxWidth;
+	[SerializeField]
+	private float maxHeight;
+
 	void Start ()
 	{
 		
@@ -14,6 +19,11 @@ public class Player : BaseStatus
 		var vec = new Vector2(
 			Input.GetAxisRaw("Horizontal"), 
 			Input.GetAxisRaw("Vertical"));
+
+		if ((transform.position.x > maxWidth && vec.x > 0.0f) || (transform.position.x < -maxWidth && vec.x < 0.0f))
+			vec.x = 0.0f;
+		if ((transform.position.y > maxHeight && vec.y > 0.0f) || (transform.position.y < -maxHeight && vec.y < 0.0f))
+			vec.y = 0.0f;
 
 		base.Move(vec);
 

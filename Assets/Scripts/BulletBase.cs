@@ -10,15 +10,10 @@ public class BulletBase : MonoBehaviour
 	protected float m_speed;
 	
 	private Vector2 m_vec;
-	private bool m_isActive;
 
 	public int DamageValue 	{ get { return m_damageVal; } }
 	public float Speed 		{ get { return m_speed; } }
-	public bool isActive
-	{
-		get { return m_isActive; }
-		set { m_isActive = value; }
-	}
+
 
 	void Start ()
 	{
@@ -27,20 +22,21 @@ public class BulletBase : MonoBehaviour
 	
 	protected virtual void Update ()
 	{
-		if (isActive)
-		{
-			transform.position += new Vector3(m_vec.x, m_vec.y, 0.0f) * m_speed * Time.deltaTime;
-		}
+		transform.position += new Vector3(m_vec.x, m_vec.y, 0.0f) * m_speed * Time.deltaTime;
 	}
 
 	public void ShotBullet(Vector2 _vec)
 	{
 		m_vec = _vec;
-		isActive = true;
 	}
 
 	public void DestroyObject()
 	{
 		Destroy(this.gameObject);
+	}
+
+	private void OnBecameInvisible()
+	{
+		DestroyObject();
 	}
 }

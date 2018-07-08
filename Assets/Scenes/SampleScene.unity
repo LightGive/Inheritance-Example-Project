@@ -419,6 +419,8 @@ MonoBehaviour:
   m_bullet: {fileID: 114248923867918438, guid: 825cb51adee91449cb6be2d987b61b97, type: 2}
   m_maxHp: 3
   m_moveSpeed: 7
+  maxWidth: 8.5
+  maxHeight: 4.5
 --- !u!212 &1881771838
 SpriteRenderer:
   m_ObjectHideFlags: 0
