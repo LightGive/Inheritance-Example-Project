@@ -38,4 +38,9 @@ public class BulletBase : MonoBehaviour
 		m_vec = _vec;
 		isActive = true;
 	}
+
+	public void DestroyObject()
+	{
+		Destroy(this.gameObject);
+	}
 }

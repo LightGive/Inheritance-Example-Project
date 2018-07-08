@@ -32,6 +32,12 @@ public class BaseStatus : MonoBehaviour
 	public void Damage(int _damageVal)
 	{
 		hp -= _damageVal;
+		if (hp == 0) { Dead(); }
+	}
+
+	protected virtual void Dead()
+	{
+		Destroy(this.gameObject);
 	}
 
 	public void Move(Vector2 _vec)
