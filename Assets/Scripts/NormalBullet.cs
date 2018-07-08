@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NormalBullet : MonoBehaviour
+public class NormalBullet : BulletBase
 {
 	void Start ()
 	{

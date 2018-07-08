@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Runtime.InteropServices;
 
 public class SceneMain : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class SceneMain : MonoBehaviour
 	[SerializeField]
 	private Text m_textWaveValue;
 	private int m_wave;
+	private List<Enemy> m_generateEnemyList;
 
 	void Start ()
 	{
@@ -21,5 +23,20 @@ public class SceneMain : MonoBehaviour
 	void Update ()
 	{
 		
+	}
+
+	void CheckEnemy()
+	{
+		for (int i = 0; i < m_generateEnemyList.Count;i++)
+		{
+			if (m_generateEnemyList[i] != null)
+				return;
+		}
+		Invoke("GenerateEnemy", 1.0f);
+	}
+
+	void GenerateEnemy()
+	{
+
 	}
 }
