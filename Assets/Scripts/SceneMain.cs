@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using System.Runtime.InteropServices;
 
-public class SceneMain : MonoBehaviour
+public class SceneMain : SingletonMonoBehaviour<SceneMain>
 {
 	[SerializeField]
 	private Enemy[] m_enemys;
@@ -18,6 +17,7 @@ public class SceneMain : MonoBehaviour
 	void Start ()
 	{
 		m_wave = 0;
+		GenerateEnemy();
 	}
 	
 	void Update ()
