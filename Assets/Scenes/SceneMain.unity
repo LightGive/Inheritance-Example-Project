@@ -145,7 +145,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 5, y: -12}
+  m_AnchoredPosition: {x: 5, y: -5}
   m_SizeDelta: {x: 30, y: 10}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &470840137
@@ -242,7 +242,7 @@ MonoBehaviour:
   m_textScoreValue: {fileID: 1193446661}
   m_textWaveValue: {fileID: 1136065179}
   m_generateNo: 0
-  positionOffset: {x: 0, y: -4}
+  positionOffset: {x: 0, y: -4, z: 0}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -324,7 +324,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 35, y: -12}
+  m_AnchoredPosition: {x: 35, y: -5}
   m_SizeDelta: {x: 30, y: 10}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1136065179
@@ -359,7 +359,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1
+  m_Text: 01
 --- !u!222 &1136065180
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -398,7 +398,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 35, y: -5}
+  m_AnchoredPosition: {x: 35, y: -12}
   m_SizeDelta: {x: 30, y: 10}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1193446661
@@ -534,7 +534,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 5, y: -5}
+  m_AnchoredPosition: {x: 5, y: -12}
   m_SizeDelta: {x: 30, y: 10}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1595477932

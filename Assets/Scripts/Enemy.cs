@@ -40,6 +40,12 @@ public class Enemy : BaseStatus
 		}
 	}
 
+	protected override void Dead()
+	{
+		base.Dead();
+		SceneMain.Instance.AddScore(m_score);
+	}
+
 	private void OnTriggerEnter2D(Collider2D _col)
 	{
 		Debug.Log("Trigger");
