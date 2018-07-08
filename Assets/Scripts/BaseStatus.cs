@@ -9,7 +9,7 @@ public class BaseStatus : MonoBehaviour
 	[SerializeField]
 	private int m_maxHp;
 	[SerializeField]
-	private float m_moveSpeed;
+	protected float m_moveSpeed;
 
 	private int m_hp;
 

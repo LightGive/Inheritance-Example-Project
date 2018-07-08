@@ -226,8 +226,23 @@ MonoBehaviour:
   m_enemys:
   - {fileID: 114664591110106860, guid: c19714fde662a4b9b9cd9db1ef96fcea, type: 2}
   - {fileID: 114299857085770322, guid: 9356550a5153b40cc94d7d20b86d8d91, type: 2}
+  m_enemyPos:
+  - pos:
+    - {x: 0, y: 6.29}
+    - {x: 2, y: 6.91}
+    - {x: -2, y: 6.91}
+    - {x: -4, y: 8.06}
+    - {x: 4, y: 8.06}
+  - pos:
+    - {x: -4.15, y: 5.42}
+    - {x: -1.97, y: 7.14}
+    - {x: -6.76, y: 7.14}
+    - {x: -1.97, y: 9.54}
+    - {x: -6.76, y: 9.54}
   m_textScoreValue: {fileID: 1193446661}
   m_textWaveValue: {fileID: 1136065179}
+  m_generateNo: 0
+  positionOffset: {x: 0, y: -4}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
